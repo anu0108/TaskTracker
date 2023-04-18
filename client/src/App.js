@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-const api_base = 'https://mern-tasktracker.onrender.com/';
+const api_base = 'https://mern-tasktracker.onrender.com';
 
 function App() {
 	const [todos, setTodos] = useState([]);
