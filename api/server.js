@@ -20,13 +20,9 @@ const Todo = require('./models/Todo');
 // })
 
 app.get('/todos', async (req, res) => {
-	try {
-		const todos = await Todo.find();
+	const todos = await Todo.find();
     console.log(todos);
 	res.json(todos);
-	} catch (error) {
-		console.log(error);
-	}
 });
 
 app.post('/todo/new', (req, res) => {
