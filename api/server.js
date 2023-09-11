@@ -15,14 +15,14 @@ mongoose.connect('mongodb+srv://anuragwadhwa786:anurag110017@cluster0.lunza1v.mo
 // Models
 const Todo = require('./models/Todo');
 
-// app.get('/',(req,res)=>{
-// 	res.send("Hello")
-// })
+app.get('/',(req,res)=>{
+	res.send("Hello")
+})
 
 app.get('/todos', async (req, res) => {
 	const todos = await Todo.find();
-    console.log(todos);
-	res.json(todos);
+    // console.log(todos);
+	// res.json(todos);
 });
 
 app.post('/todo/new', (req, res) => {
