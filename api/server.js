@@ -1,7 +1,7 @@
+const Todo = require('./models/Todo');
 const express = require('express');
 const mongoose = require('mongoose');
 const cors = require('cors');
-
 const app = express();
 
 app.use(express.json());
@@ -19,7 +19,7 @@ mongoose.connect('mongodb+srv://anuragwadhwa786:anurag110017@cluster0.lunza1v.mo
   });
 
 // Models
-const Todo = require('./models/Todo');
+
 
 app.get('/', (req, res) => {
   res.send("Hello");
